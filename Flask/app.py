@@ -20,13 +20,6 @@ def home():
 @app.route('/predict', methods=['GET', 'POST'])
 def predict():
     if request.method == 'POST':
-        # imgLink = request.args.get("image")
-        # print(imgLink)
-        # imgResp = requests.get(imgLink)
-        # imgBytes = io.BytesIO(imgResp.content)
-
-        # img = PIL.Image.open(imgBytes)
-        # img.show()
         try:
             file = request.files['file']
             img = file.read()
