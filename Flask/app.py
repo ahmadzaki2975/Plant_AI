@@ -14,7 +14,7 @@ CORS(app)
 
 @app.route('/', methods=['GET'])
 def home():
-    return render_template('index.html')
+    return "Server running"
 
 
 @app.route('/predict', methods=['GET', 'POST'])
